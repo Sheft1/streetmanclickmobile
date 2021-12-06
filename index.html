@@ -2,7 +2,10 @@
 <html>
 <head>
 <body>
-<center>
+
+  <div id="content">
+
+
 		<h1>StreetManClicker PE</h1>
 		<p id="CookieAmount">Current Streetmans: 0</p>
 		<button onclick="Click()" id="Button" style="background: none; border: none; padding: 0;"><img src="https://pbs.twimg.com/profile_images/1251899756529487872/0PBO0NLP_400x400.jpg" alt="Cookie" width="250" id="CookieButton"></button>
@@ -18,6 +21,12 @@
   right: 10px;
   top: 70px;
 
+#content{
+  display: flex;
+  border: solid black 1px;
+  height: 100%;
+  width: 100px;
+}
 
 } </style>
 <style>   {
@@ -25,6 +34,9 @@
   right: 10px;
   top: 100px;
 
+html{
+  display: flex;
+}
 
 } </style>
 
@@ -50,8 +62,8 @@
                  <br>
                  <button onclick="Upgrade3Click()" id="Upgrade3">Vodka</button></p2> <br>
                  <p id="Upgrade3Text"> 0 Vodkas! Price: 1000000 </p>
-
-        </center>
+  </div>
+        
         </b3>
 
 		<script>
