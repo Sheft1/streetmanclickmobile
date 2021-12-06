@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<center>
+		<h1>StreetManClicker PE</h1>
+		<p id="CookieAmount">Current Streetmans: 0</p>
+		<button onclick="Click()" id="Button" style="background: none; border: none; padding: 0;"><img src="https://pbs.twimg.com/profile_images/1251899756529487872/0PBO0NLP_400x400.jpg" alt="Cookie" width="250" id="CookieButton"></button>
+		<style>   {
+  position: absolute;
+  right: 10px;
+  top: 70px;
+  		 
+
+} </style>
+<style>   {
+  position: absolute;
+  right: 10px;
+  top: 70px;
+  		 
+
+} </style>
+<style>   {
+  position: absolute;
+  right: 10px;
+  top: 100px;
+  		 
+
+} </style>
+ 
+		
+        
+        
+        
+        <b3><p><b></b></p>
+		
+        
+        
+        
+
+       <h3>Upgrades:</h3>
+        <p1> <button onclick="Upgrade1Click()" id="Upgrade1">Beer</button>
+        <p id="Upgrade1Text">
+			0 Beers!	Price: 10
+		</p>
+        
+        </p1><br>
+        		<p2><button onclick="Upgrade2Click()" id="Upgrade2">Jack Daniels</button></p2> <br>
+                 <p id="Upgrade2Text"> 0 Jack Daniles! Price: 1500 </p>
+                 <br>
+                 <button onclick="Upgrade3Click()" id="Upgrade3">Vodka</button></p2> <br>
+                 <p id="Upgrade3Text"> 0 Vodkas! Price: 1000000 </p>
+        
+        </center>
+        </b3>
+		
+		<script>
+			<!-- Setting variables -->
+			var Points = 0	<!-- The points the player has -->
+			var Multiplier = 1	<!-- How much the adding points get multiplied, increases with each upgraded -->
+			var Upgrade1Times = 0	<!-- How many times upgraded -->
+			var Upgrade1Price = 10
+            var Upgrade2Times = 0
+            var Upgrade2Price = 1500 <!-- The price of the upgrade -->
+			var Upgrade3Times = 0
+            var Upgrade3Price = 1000000
+			var Button = document.getElementById("Button");	<!-- Defines the main button pressed to gain points -->
+			var Upgrade1Button = document.getElementById("Upgrade1");
+            var Upgrade2Button = document.getElementById("Upgrade2");
+             var Upgrade3Button = document.getElementById("Upgrade3");
+           <!-- Defines the upgrade button -->
+			var Upgrade1Text = document.getElementById("Upgrade1Text");
+            var Upgrade2Text = document.getElementById("Upgrade2Text");
+            var Upgrade3Text = document.getElementById("Upgrade3Text");
+            <!-- Defines the text stuff for the upgrade -->
+			
+			var CookieButton = document.getElementById("CookieButton");	<!-- Defines the cookie image in the main button -->
+			
+			var CookieAmount = document.getElementById("CookieAmount"); <!-- Get the text where it displays your cookies -->
+			
+			
+			<!-- Function executed when the main button to gain points is pressed -->
+			function Click() {
+				var AddPoints = 1 * Multiplier
+				Points = Points + AddPoints
+				CookieAmount.innerHTML = "Current Streetmans: " + Points
+				CookieButton.width = "255"
+				setTimeout(() => {CookieButton.width = "250";}, 100);
+			}
+			
+			<!-- Function executed when player press the upgrade button -->
+			function Upgrade1Click() {
+				if (Points >= Upgrade1Price) {
+					Multiplier = Multiplier + 1
+					Upgrade1Times = Upgrade1Times + 1
+					Points = Points - Upgrade1Price
+					Upgrade1Price = Upgrade1Price + 10
+					Upgrade1Text.innerHTML = " " + Upgrade1Times + " Beers!	Price: " + Upgrade1Price
+                }}    
+                    function Upgrade2Click() {
+				if (Points >= Upgrade2Price) {
+					Multiplier = Multiplier + 30
+					Upgrade2Times = Upgrade2Times + 1
+					Points = Points - Upgrade2Price
+					Upgrade2Price = Upgrade2Price + 1500
+					Upgrade2Text.innerHTML = " " + Upgrade2Times + " Jack Daniels!	Price: " + Upgrade2Price }}
+                    
+                    function Upgrade3Click() {
+				if (Points >= Upgrade3Price) {
+					Multiplier = Multiplier + 1
+					Upgrade3Times = Upgrade3Times + 1
+					Points = Points - Upgrade3Price
+					Upgrade3Price = Upgrade3Price + 1000000
+					Upgrade3Text.innerHTML = " " + Upgrade3Times + " Vodka!	Price: " + Upgrade3Price
+                 
+                 
+                    
+					CookieAmount.innerHTML = "Current Streetmans: " + Points
+				}
+			}
+		</script>
+	
+
+
+
+
+
+
+
+
+
+</html>
