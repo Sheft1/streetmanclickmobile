@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=1000px">
+  </head>
 <body>
 
   <div id="content">
@@ -9,14 +11,10 @@
 		<h1>StreetManClicker PE</h1>
 		<p id="CookieAmount">Current Streetmans: 0</p>
 		<button onclick="Click()" id="Button" style="background: none; border: none; padding: 0;"><img src="https://pbs.twimg.com/profile_images/1251899756529487872/0PBO0NLP_400x400.jpg" alt="Cookie" width="250" id="CookieButton"></button>
-		<style>   {
-  position: absolute;
-  right: 10px;
-  top: 70px;
 
 
-} </style>
-<meta name="viewport" content="width=1000">
+
+
 <style>
 
 
@@ -26,10 +24,16 @@
   height: 100%;
   width: 100%;
 }
-@media only screen and (max-width: 500px) {
+@media only screen (max-width: 490px max-height: 100%) {
   /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
+  #content{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border: solid black 1px;
+    height: 100%;
+    width: 490px;
+  }
   }
 }
 
@@ -39,7 +43,7 @@
   justify-content:center;
   border: solid black 1px;
   height: 100%;
-  width: 5 00px;
+  width: 490px;
 }
 
 } </style>
