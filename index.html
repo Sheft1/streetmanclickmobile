@@ -36,7 +36,7 @@
 
 <style>
 
-  #content{
+  .content{
     display: flex;
     align-items: center;
     justify-content:center;
@@ -44,8 +44,8 @@
 
   }
   /* (iphone 13) */
-@media only screen and (max-width: 1170px) {
-  #content{
+@media only screen and (min-width: 1170px) {
+  .content{
     display: flex;
     align-items: center;
     justify-content:center;
@@ -54,15 +54,12 @@
     width: 470px;
   }
 }
-@media only screen and (max-width: 1334px) {
-#content{
-  display: flex;
-  align-items: center;
-  justify-content:center;
+@media only screen and (min-width: 1334px) {
+.content{
   width: 450px;
 }}
-@media only screen and (max-width: 2436px) {
-#content{
+@media only screen and (min-width: 2436px) {
+.content{
   display: flex;
   align-items: center;
   justify-content:center;
@@ -113,7 +110,7 @@ body{
 
 <body>
 
-  <div id="content">
+  <div class="content">
 
 <center>
 		<h1>StreetManClicker PE</h1>
