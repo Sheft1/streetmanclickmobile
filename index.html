@@ -36,28 +36,24 @@
 
 <style>
 
-  /*.content{
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    max-height: 100%;
+#upgrades{
+display:flex;
 
-  }
-  (iphone 13)
-@media only screen and (min-width: 1170px) {
-  .content{
+width: 300px;
+height: 250px;
+flex-direction: column;
 
-    width: 480px;
-  }
 }
-@media only screen and (max-width: 1334px) {
-.content{
-  width: 450px;
-}}
-@media only screen and (max-width: 1125px) {
-.content{
-  width: 450px;
-}}*/
+
+.boks{
+  display: flex;
+
+flex-direction: column;
+   height: 50px;
+   width:100%;
+   align-items: center;
+   justify-content:center;
+}
 
 
 
@@ -99,6 +95,17 @@ body{
 	-webkit-touch-callout: none;
 }
 
+.strek{
+  display:flex;
+  border: solid black 1px;
+  width: 100px;
+}
+.strek2{
+  display: flex;
+  border: solid black 1px;
+  width: 100%;
+}
+
  </style>
 </head>
 
@@ -113,28 +120,43 @@ body{
 
 
 <div id="upgrades">
-
-
+  <center>
+<div class="strek2"></div>
+</center>
+<div class="boks">
        <h3>Upgrades:</h3>
+
+       </div>
         <p1>
+            <div class="strek"></div>
+<div class="boks">
 
         <div id="Knapp1"<button onclick="Upgrade1Click()" id="Upgrade1">Beer</button></div>
         <p id="Upgrade1Text">
 			0 Beers!	Price: 10
 		</p>
+</div>
 
 
+        </p1>
+        <br>
+        <div class="strek"></div>
+        <div class="boks">
 
-        </p1><br>
-        		<p2><div id="Knapp2"<button onclick="Upgrade2Click()" id="Upgrade2">Jack Daniels</button></div></p2> <br>
-                 <p id="Upgrade2Text"> 0 Jack Daniles! Price: 1500 </p>
+        		<p2><div id="Knapp2"<button onclick="Upgrade2Click()" id="Upgrade2">Jack Daniels</button></div></p2>
+                 <p id="Upgrade2Text"> 0 Jack Daniles! Price: 1500 </p> </div>
+
                  <br>
+<div class="strek"></div>
+                 <div class="boks">
                  <div id="Knapp3"
-                 <button onclick="Upgrade3Click()" id="Upgrade3">Vodka</button></div><br>
+                 <button onclick="Upgrade3Click()" id="Upgrade3">Vodka</button></div>
                  <p id="Upgrade3Text"> 0 Vodkas! Price: 1000000 </p></div>
 </center>
   </div>
-
+  <center>
+<div class="strek2"></div>
+</center>
 
 
 		<script>
