@@ -40,7 +40,7 @@
 display:flex;
 
 width: 300px;
-height: 270px;
+height: 350px;
 flex-direction: column;
 
 }
@@ -49,7 +49,7 @@ flex-direction: column;
   display: flex;
 
 flex-direction: column;
-   height: 50px;
+   height: 100%;
    width:100%;
    align-items: center;
    justify-content:center;
@@ -63,6 +63,7 @@ html{
   min-width:100%;
   align-items: center;
   justify-content:center;
+
 }
 #Knapp1{
   display:flex;
@@ -93,17 +94,19 @@ body{
   -webkit-tap-highlight-color: transparent;
    -webkit-user-select: none;
 	-webkit-touch-callout: none;
+  background-color:#282828 ;
+  color: White;
 }
 
 .strek{
   display:flex;
-  border: solid black 1px;
-  width: 100px;
+  width: 100%;
 }
 .strek2{
   display: flex;
-  border: solid black 1px;
-  width: 100%;
+
+  width: 100px;
+
 }
 
  </style>
@@ -120,38 +123,42 @@ body{
 
 
 <div id="upgrades">
+
+<div class="boks">
   <center>
 <div class="strek2"></div>
 </center>
-<div class="boks">
        <h3>Upgrades:</h3>
 
        </div>
         <p1>
-            <div class="strek"></div>
+<div class="strek"></div>
 <div class="boks">
 
-        <div id="Knapp1"<button onclick="Upgrade1Click()" id="Upgrade1">Beer</button></div>
+        <div id="Knapp1"<button onclick="Upgrade1Click()" id="Upgrade1"></button>
         <p id="Upgrade1Text">
-			0 Beers!	Price: 10
+			0 Beers!
+      Price: 10
 		</p>
+    </div>
 </div>
 
 
         </p1>
         <br>
-        <div class="strek"></div>
+  <div class="strek"></div>
         <div class="boks">
 
-        		<p2><div id="Knapp2"<button onclick="Upgrade2Click()" id="Upgrade2">Jack Daniels</button></div></p2>
-                 <p id="Upgrade2Text"> 0 Jack Daniles! Price: 1500 </p> </div>
+        		<p2><div id="Knapp2"<button onclick="Upgrade2Click()" id="Upgrade2"></button></p2>
+                 <p id="Upgrade2Text"> 0 Jack Daniles! Price: 1500 </p> </div></div>
 
                  <br>
-<div class="strek"></div>
+     <div class="strek"></div>
                  <div class="boks">
+
                  <div id="Knapp3"
-                 <button onclick="Upgrade3Click()" id="Upgrade3">Vodka</button></div>
-                 <p id="Upgrade3Text"> 0 Vodkas! Price: 1000000 </p></div>
+                 <button onclick="Upgrade3Click()" id="Upgrade3"></button>
+                 <p id="Upgrade3Text"> 0 Vodkas! Price: 1000000 </p></div></div>
 </center>
   </div>
   <center>
