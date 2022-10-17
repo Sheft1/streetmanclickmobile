@@ -1,391 +1,641 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=1, user-scalable=no, height=device-height">
-  <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=0.9, maximum-scale=1, user-scalable=no, height=device-height">
+	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-application-name" content="SM Clicker PE">
-  	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="apple-touch-icon" href="https://i.ibb.co/RNmXf8Q/saf.png">
-  <link rel="apple-touch-icon" href="https://i.ibb.co/RNmXf8Q/saf.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="https://i.ibb.co/RNmXf8Q/saf.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://i.ibb.co/RNmXf8Q/saf.png">
-  <link rel="apple-touch-icon" sizes="167x167" href="https://i.ibb.co/RNmXf8Q/saf.png">
-  <!-- iPhone Xs Max (1242px x 2688px) -->
-<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
-<!-- iPhone Xr (828px x 1792px) -->
-<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
-<!-- iPhone X, Xs (1125px x 2436px) -->
-<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
-<!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
-<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)" href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
-<!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
-<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
-<!-- iPad Pro 12.9" (2048px x 2732px) -->
-<link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
-<!-- iPad Pro 11” (1668px x 2388px) -->
-<link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
-<!-- iPad Pro 10.5" (1668px x 2224px) -->
-<link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
-<!-- iPad Mini, Air (1536px x 2048px) -->
-<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
-<!-- iPhone 13 (1170px × 2532px) -->
-<link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)" href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
-	
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="apple-touch-icon" href="https://i.ibb.co/RNmXf8Q/saf.png">
+	<link rel="apple-touch-icon" href="https://i.ibb.co/RNmXf8Q/saf.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://i.ibb.co/RNmXf8Q/saf.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://i.ibb.co/RNmXf8Q/saf.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="https://i.ibb.co/RNmXf8Q/saf.png">
+	<!-- iPhone Xs Max (1242px x 2688px) -->
+	<link rel="apple-touch-startup-image"
+		media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
+		href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
+	<!-- iPhone Xr (828px x 1792px) -->
+	<link rel="apple-touch-startup-image"
+		media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
+		href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
+	<!-- iPhone X, Xs (1125px x 2436px) -->
+	<link rel="apple-touch-startup-image"
+		media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+		href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
+	<!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+	<link rel="apple-touch-startup-image"
+		media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)"
+		href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
+	<!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+	<link rel="apple-touch-startup-image"
+		media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+		href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
+	<!-- iPad Pro 12.9" (2048px x 2732px) -->
+	<link rel="apple-touch-startup-image"
+		media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
+		href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
+	<!-- iPad Pro 11” (1668px x 2388px) -->
+	<link rel="apple-touch-startup-image"
+		media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
+		href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
+	<!-- iPad Pro 10.5" (1668px x 2224px) -->
+	<link rel="apple-touch-startup-image"
+		media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
+		href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
+	<!-- iPad Mini, Air (1536px x 2048px) -->
+	<link rel="apple-touch-startup-image"
+		media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
+		href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
+	<!-- iPhone 13 (1170px × 2532px) -->
+	<link rel="apple-touch-startup-image"
+		media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)"
+		href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
+
 	<link rel="apple-touch-startup-image" href="https://i.ibb.co/Hn1js9X/Tegnebrett-1.png">
 
 
+	<script type="text/javascript">
+		function settings() {
+			if (document.getElementById('home') !== undefined) {
+				if (document.getElementById('settings').style.display == 'none') {
+					document.getElementById('settings').style.display = 'Block';
+					document.getElementById('home').style.display = 'none';
+				} else {
+					document.getElementById('settings').style.display = 'Block';
+					document.getElementById('home').style.display = 'none';
+				}
+			}
+		}
+
+		function settingsback() {
+			if (document.getElementById('settings') !== undefined) {
+				if (document.getElementById('home').style.display == 'none') {
+					document.getElementById('home').style.display = 'Block';
+					document.getElementById('settings').style.display = 'none';
+				} else {
+					document.getElementById('home').style.display = 'Block';
+					document.getElementById('settings').style.display = 'none';
+				}
+			}
+		}
+
+		function general() {
+			if (document.getElementById('settings') !== undefined) {
+				if (document.getElementById('general').style.display == 'none') {
+					document.getElementById('general').style.display = 'Block';
+					document.getElementById('settings').style.display = 'none';
+				} else {
+					document.getElementById('general').style.display = 'Block';
+					document.getElementById('settings').style.display = 'none';
+				}
+			}
+		}
+
+		function generalback() {
+			if (document.getElementById('general') !== undefined) {
+				if (document.getElementById('settings').style.display == 'none') {
+					document.getElementById('settings').style.display = 'Block';
+					document.getElementById('general').style.display = 'none';
+				} else {
+					document.getElementById('settings').style.display = 'Block';
+					document.getElementById('general').style.display = 'none';
+				}
+			}
+		}
+		function ting() {
+			var great = +document.getElementById('CookieAmount').value;
+			if (great > '1500') {
+				document.getElementById('ll').style.display = 'flex';
+			}
+			else {
+				document.getElementById('ll2').style.display = 'none';
+			}
+		}
 
 
-<style>
+	</script>
 
-#upgrades{
-display:flex;
+	<style>
+		#upgrades {
+			display: flex;
 
-width: 300px;
-height: 350px;
-flex-direction: column;
+			width: 300px;
+			height: 350px;
+			flex-direction: column;
 
-}
-
-.boks{
-  display: flex;
-
-flex-direction: column;
-   height: 100%;
-   width:100%;
-   align-items: center;
-   justify-content:center;
-}
+		}
 
 
+		.boks {
+			display: flex;
 
-html{
-  display: flex;
-  height: 100%;
-  min-width:100%;
-  align-items: center;
-  justify-content:center;
+			flex-direction: column;
+			height: 100%;
+			width: 100%;
+			align-items: center;
+			justify-content: center;
+		}
 
-}
-#Knapp1{
-  display:flex;
 
-  border-radius: 25px;
-  background: #25582e;
-  align-items: center;
-  justify-content:center;
-}
-	
-	p{
-	  font-size: 17px;
-	}
-	
-	h1 {
-  font-size: 30px;
-}
-	
-	body{
-   overflow-x:hidden;
-		// disable horizontal scrolling.
-	  
-}
-	
-	
-#Knapp2{
-  display:flex;
-  border: solid black 1px;
-  border-radius: 25px;
-  background: #8C6E4B;
-  align-items: center;
-  justify-content:center;
-}
-#Knapp3{
-  display:flex;
-  border: solid black 1px;
-  border-radius: 25px;
-  background: #2596be;
-  align-items: center;
-  justify-content:center;
-}
-	
-#Knapp4{
-  display:flex;
-  border: solid black 1px;
 
-  background: #gray;
-  align-items: center;
-  justify-content:center;
-height: 20px;
-	width: 50px;
-}	
-	.settings {
-    display: none;
-  }
+		html {
+			display: flex;
+			height: 100%;
+			align-items: center;
+			justify-content: center;
+			font-family: sans-serif;
 
-  .buttonn3:checked + .settings {
-    display: block;
-  }
-	
-	
+		}
 
-body{
-  -webkit-tap-highlight-color: transparent;
-   -webkit-user-select: none;
-	-webkit-touch-callout: none;
-  background-color:#282828 ;
-  color: White;
-}
-	
-.dark-mode {
-  background-color: white;
-  color: black;
-}	
+		#Knapp1 {
+			display: flex;
 
-.strek{
-  display:flex;
-  width: 100%;
-}
-.strek2{
-  display: flex;
+			border-radius: 25px;
+			background: #25582e;
+			align-items: center;
+			justify-content: center;
+		}
 
-  width: 100px;
+		p {
+			font-size: 17px;
+		}
 
-}
+		h1 {
+			font-size: 30px;
+		}
 
- </style>
+		body {
+			overflow-x: hidden;
+
+
+		}
+
+
+		#Knapp2 {
+			display: flex;
+			border: solid black 1px;
+			border-radius: 25px;
+			background: #8C6E4B;
+			align-items: center;
+			justify-content: center;
+		}
+
+		#Knapp3 {
+			display: flex;
+			border: solid black 1px;
+			border-radius: 25px;
+			background: #2596be;
+			align-items: center;
+			justify-content: center;
+		}
+
+		#Knapp4 {
+			display: flex;
+			border: solid black 1px;
+			background: gray;
+			align-items: center;
+			justify-content: center;
+			height: 20px;
+			width: 50px;
+		}
+
+		#settings {
+			display: none;
+			flex-direction: column;
+		}
+
+		.buttonn3:checked+.settings {
+			display: block;
+
+
+		}
+
+
+
+		body {
+			-webkit-tap-highlight-color: transparent;
+			-webkit-user-select: none;
+			-webkit-touch-callout: none;
+			background-color: #282828;
+			color: White;
+		}
+
+		.dark-mode {
+			background-color: white;
+			color: black;
+		}
+
+		.strek {
+			display: flex;
+			width: 100%;
+		}
+
+		.strek2 {
+			display: flex;
+
+			width: 100px;
+
+		}
+
+		#settings button {
+			border: solid black;
+			border-radius: 25px;
+		}
+
+		#generalbutton {
+			border: solid black;
+			background-color: #25582e;
+			height: 50px;
+			width: 100px;
+			color: black;
+			border-radius: 25px;
+		}
+
+		#displaybutton {
+			border: solid black;
+			background-color: #8C6E4B;
+			height: 50px;
+			width: 100px;
+			color: black;
+			border-radius: 25px;
+		}
+
+		#morebutton {
+			border: solid black;
+			background-color: #2596be;
+			height: 50px;
+			width: 100px;
+			color: black;
+			border-radius: 25px;
+		}
+
+		#general {
+			display: none;
+		}
+
+		#display {
+			display: none;
+		}
+
+		#more {
+			display: none;
+		}
+	</style>
 </head>
 
-<body>
+<body onload="javascript:ting();">
 
-  <div class="content">
-
-<center>
-		<h1>StreetManClicker PE</h1>
-		<p id="CookieAmount">Current Streetmans: 0</p>
-		<button onclick="Click()" id="Button" style="background: none; border: none; padding: 0;"><img src="https://i.scdn.co/image/ab6761610000e5eb432cae2d5a5c8498d66b19c4" alt="Cookie" width="250" id="CookieButton"></button>
+	<div class="content">
+		<div id="home">
 
 
-<div id="upgrades">
-
-<div class="boks">
-  <center>
-<div class="strek2"></div>
-</center>
-       <h3>Upgrades:</h3>
-
-       </div>
-        <p1>
-<div class="strek"></div>
-<div class="boks">
-
-        <div id="Knapp1"<button onclick="Upgrade1Click()" id="Upgrade1"></button>
-        <p id="Upgrade1Text">
-			0 Beers!
-      Price: 10
-		</p>
-    </div>
-</div>
+			<center>
+				<h1>StreetManClicker PE</h1>
+				<p id="CookieAmount">Current Streetmans: 0</p>
+				<p id="CookieAmount" style="display:none;">Current Streetmans: 0</p>
+				<button onclick="Click()" id="Button" style="background: none; border: none; padding: 0;"><img
+						src="https://i.scdn.co/image/ab6761610000e5eb432cae2d5a5c8498d66b19c4" alt="Cookie" width="250"
+						id="CookieButton"></button>
 
 
-        </p1>
-        <br>
-  <div class="strek"></div>
-        <div class="boks">
+				<div id="upgrades">
 
-        		<p2><div id="Knapp2"<button onclick="Upgrade2Click()" id="Upgrade2"></button></p2>
-                 <p id="Upgrade2Text"> 0 Jack Daniles! Price: 1500 </p> </div></div>
+					<div class="boks">
+						<center>
+							<div class="strek2"></div>
+						</center>
+						<h3>Upgrades:</h3>
 
-                 <br>
-     <div class="strek"></div>
-                 <div class="boks">
+					</div>
+					<p1>
+						<div class="strek"></div>
+						<div class="boks">
 
-                 <div id="Knapp3"
-                 <button onclick="Upgrade3Click()" id="Upgrade3"></button>
-                 <p id="Upgrade3Text"> 0 Vodkas! Price: 1000000 </p></div></div>
-</center>
-  </div>
-  <center>
-
-
-
-<input class="buttonn3" type="checkbox"
- name="button">Settings</input>
+							<div id="Knapp1" <button onclick="Upgrade1Click()" id="Upgrade1"></button>
+								<p id="Upgrade1Text">
+									0 Beers!
+									Price: 10
+								</p>
+							</div>
+						</div>
 
 
+					</p1>
+					<br>
+					<div class="strek"></div>
+					<div class="boks">
 
+						<p2>
+							<div id="Knapp2" <button onclick="Upgrade2Click()" id="Upgrade2"></button>
+						</p2>
+						<p id="Upgrade2Text"> 0 Jack Daniles! Price: 1500 </p>
+					</div>
+				</div>
 
+				<br>
+				<div class="strek"></div>
+				<div class="boks">
 
-  <div class="settings">
-    <center>
-      <iframe src="https://sheft1.github.io/streetmanclickmobile/index2.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="100%" allowfullscreen></iframe>
-   <p> Is there any bugs? Submit here-> </p>  <input type="button" onclick="location.href='https://forms.gle/BxonQEYQjsaset7X6';" value="Bugs" />
-<input type="button" onclick="darkMode()" value="Dark Mode/ Light Mode">
-</center>
+					<div id="Knapp3" <button onclick="Upgrade3Click()" id="Upgrade3"></button>
+						<p id="Upgrade3Text"> 0 Vodkas! Price: 1000000 </p>
+					</div>
+				</div>
+				<button type="button" disabled name="button" id="ll" onclick="javascript:settings();">Settings</button>
+				<button type="button" name="button" id="ll2" onclick="javascript:settings();"
+					style="display:none;">Settings</button>
+			</center>
+		</div>
 
-  </div>
+		<center>
 
 
 
 
-    </div>
-</div>
-</center>
 
-
-		<script>
-			<!-- Setting variables -->
-			var Points = 0	<!-- The points the player has -->
-			var Multiplier = 1	<!-- How much the adding points get multiplied, increases with each upgraded -->
-			var Upgrade1Times = 0	<!-- How many times upgraded -->
-			var Upgrade1Price = 10
-            var Upgrade2Times = 0
-            var Upgrade2Price = 1500 <!-- The price of the upgrade -->
-			var Upgrade3Times = 0
-            var Upgrade3Price = 1000000
-			var Button = document.getElementById("Button");	<!-- Defines the main button pressed to gain points -->
-			var Upgrade1Button = document.getElementById("Upgrade1");
-            var Upgrade2Button = document.getElementById("Upgrade2");
-             var Upgrade3Button = document.getElementById("Upgrade3");
-           <!-- Defines the upgrade button -->
-			var Upgrade1Text = document.getElementById("Upgrade1Text");
-            var Upgrade2Text = document.getElementById("Upgrade2Text");
-            var Upgrade3Text = document.getElementById("Upgrade3Text");
-            <!-- Defines the text stuff for the upgrade -->
-
-			var CookieButton = document.getElementById("CookieButton");	<!-- Defines the cookie image in the main button -->
-
-			var CookieAmount = document.getElementById("CookieAmount"); <!-- Get the text where it displays your cookies -->
-
-      if("Points" in localStorage){
-        if(JSON.parse(localStorage.getItem("Points")) == 0){
-    					Points = 0;
-    				}else{
-    					Points = JSON.parse(localStorage.getItem("Points"));
-    				}
-    				CookieAmount.innerHTML = "Current Streetmans: " + Points
-      }
-      if("Upgrade1Times" in localStorage){
-        if(JSON.parse(localStorage.getItem("Upgrade1Times")) == 0){
-    					Upgrade1Times = 0;
-    				}else{
-    					Upgrade1Times = JSON.parse(localStorage.getItem("Upgrade1Times"));
-    				}
-    			   Upgrade1Text.innerHTML = " " + Upgrade1Times + " Beers!	Price: " + Upgrade1Price
-      }
-      if("Upgrade1Price" in localStorage){
-        if(JSON.parse(localStorage.getItem("Upgrade1Price")) == 0){
-    					Upgrade1Price = 0;
-    				}else{
-    					Upgrade1Price = JSON.parse(localStorage.getItem("Upgrade1Price"));
-    				}
-    			   Upgrade1Text.innerHTML = " " + Upgrade1Times + " Beers!	Price: " + Upgrade1Price
-      }
+	</div>
 
 
 
-      if("Upgrade2Times" in localStorage){
-        if(JSON.parse(localStorage.getItem("Upgrade2Times")) == 0){
-    					Upgrade2Times = 0;
-    				}else{
-    					Upgrade2Times = JSON.parse(localStorage.getItem("Upgrade2Times"));
-    				}
-    			   Upgrade2Text.innerHTML = " " + Upgrade2Times + " Jack Daniels!	Price: " + Upgrade2Price
-      }
-      if("Upgrade2Price" in localStorage){
-        if(JSON.parse(localStorage.getItem("Upgrade2Price")) == 0){
-    					Upgrade2Price = 0;
-    				}else{
-    					Upgrade2Price = JSON.parse(localStorage.getItem("Upgrade2Price"));
-    				}
-    			   Upgrade2Text.innerHTML = " " + Upgrade2Times + " Jack Daniels!	Price: " + Upgrade2Price
-      }
 
 
 
-      if("Upgrade3Times" in localStorage){
-        if(JSON.parse(localStorage.getItem("Upgrade3Times")) == 0){
-    					Upgrade3Times = 0;
-    				}else{
-    					Upgrade3Times = JSON.parse(localStorage.getItem("Upgrade3Times"));
-    				}
-    			   Upgrade3Text.innerHTML = " " + Upgrade3Times + " Vodkas!	Price: " + Upgrade3Price
-      }
-      if("Upgrade3Price" in localStorage){
-        if(JSON.parse(localStorage.getItem("Upgrade3Price")) == 0){
-    					Upgrade3Price = 0;
-    				}else{
-    					Upgrade3Price = JSON.parse(localStorage.getItem("Upgrade3Price"));
-    				}
-    			   Upgrade3Text.innerHTML = " " + Upgrade3Times + " Vodkas!	Price: " + Upgrade3Price
-      }
 
-			<!-- Function executed when the main button to gain points is pressed -->
-			function Click() {
-				var AddPoints = 1 * Multiplier
-				Points = Points + AddPoints
+
+
+
+
+
+
+	<div id="settings">
+		<center>
+
+			<h2>Settings</h2>
+
+			<br>
+			<div id="generalbutton" onclick="javascript:general();">
+				<p>General</p>
+			</div>
+
+			<div id="displaybutton" onclick="javascript:display();">
+				<p>Display</p>
+			</div>
+
+			<div id="morebutton" onclick="javascript:more();">
+				<p>More</p>
+			</div>
+			<input type="button" onclick="darkMode()" value="Dark Mode/ Light Mode">
+			<br>
+			<input type="button" onclick="location.href='https://forms.gle/BxonQEYQjsaset7X6';" value="Bugs?" />
+
+
+			<br>
+			<p2>All rights to @sheftbass and all img rights to @streetmantv</p2>
+		</center>
+		<button type="button" name="button" onclick="javascript:settingsback();">Back</button>
+	</div>
+
+
+
+
+	</div>
+	</div>
+	</center>
+
+
+	<center>
+		<div id="general">
+
+			<div class="gset">
+
+			</div>
+
+			<div class="gset">
+
+			</div>
+
+
+			<div class="gset">
+				<button type="button" name="button" onclick="javascript:generalback();">Back</button>
+			</div>
+
+
+
+		</div>
+
+		<div id="display">
+
+			<div class="gset">
+
+			</div>
+
+			<div class="gset">
+
+			</div>
+
+
+			<div class="gset">
+				<button type="button" name="button" onclick="javascript:displayback();">Back</button>
+			</div>
+
+
+
+		</div>
+
+		<div id="more">
+
+			<div class="gset">
+
+			</div>
+
+			<div class="gset">
+
+			</div>
+
+
+			<div class="gset">
+				<button type="button" name="button" onclick="javascript:moreback();">Back</button>
+			</div>
+
+
+
+		</div>
+
+
+
+	</center>
+
+
+	<script>
+
+		var Points = 0
+
+		var Multiplier = 1
+
+		var Upgrade1Times = 0
+
+		var Upgrade1Price = 10
+		var Upgrade2Times = 0
+		var Upgrade2Price = 1500
+
+		var Upgrade3Times = 0
+		var Upgrade3Price = 1000000
+		var Button = document.getElementById("Button");
+
+		var Upgrade1Button = document.getElementById("Upgrade1");
+		var Upgrade2Button = document.getElementById("Upgrade2");
+		var Upgrade3Button = document.getElementById("Upgrade3");
+
+		var Upgrade1Text = document.getElementById("Upgrade1Text");
+		var Upgrade2Text = document.getElementById("Upgrade2Text");
+		var Upgrade3Text = document.getElementById("Upgrade3Text");
+
+
+		var CookieButton = document.getElementById("CookieButton");
+
+
+		var CookieAmount = document.getElementById("CookieAmount");
+
+
+		if ("Points" in localStorage) {
+			if (JSON.parse(localStorage.getItem("Points")) == 0) {
+				Points = 0;
+			} else {
+				Points = JSON.parse(localStorage.getItem("Points"));
+			}
+			CookieAmount.innerHTML = "Current Streetmans: " + Points
+		}
+		if ("Upgrade1Times" in localStorage) {
+			if (JSON.parse(localStorage.getItem("Upgrade1Times")) == 0) {
+				Upgrade1Times = 0;
+			} else {
+				Upgrade1Times = JSON.parse(localStorage.getItem("Upgrade1Times"));
+			}
+			Upgrade1Text.innerHTML = " " + Upgrade1Times + " Beers! Price: " + Upgrade1Price
+		}
+		if ("Upgrade1Price" in localStorage) {
+			if (JSON.parse(localStorage.getItem("Upgrade1Price")) == 0) {
+				Upgrade1Price = 0;
+			} else {
+				Upgrade1Price = JSON.parse(localStorage.getItem("Upgrade1Price"));
+			}
+			Upgrade1Text.innerHTML = " " + Upgrade1Times + " Beers! Price: " + Upgrade1Price
+		}
+
+
+
+		if ("Upgrade2Times" in localStorage) {
+			if (JSON.parse(localStorage.getItem("Upgrade2Times")) == 0) {
+				Upgrade2Times = 0;
+			} else {
+				Upgrade2Times = JSON.parse(localStorage.getItem("Upgrade2Times"));
+			}
+			Upgrade2Text.innerHTML = " " + Upgrade2Times + " Jack Daniels! Price: " + Upgrade2Price
+		}
+		if ("Upgrade2Price" in localStorage) {
+			if (JSON.parse(localStorage.getItem("Upgrade2Price")) == 0) {
+				Upgrade2Price = 0;
+			} else {
+				Upgrade2Price = JSON.parse(localStorage.getItem("Upgrade2Price"));
+			}
+			Upgrade2Text.innerHTML = " " + Upgrade2Times + " Jack Daniels! Price: " + Upgrade2Price
+		}
+
+
+
+		if ("Upgrade3Times" in localStorage) {
+			if (JSON.parse(localStorage.getItem("Upgrade3Times")) == 0) {
+				Upgrade3Times = 0;
+			} else {
+				Upgrade3Times = JSON.parse(localStorage.getItem("Upgrade3Times"));
+			}
+			Upgrade3Text.innerHTML = " " + Upgrade3Times + " Vodkas! Price: " + Upgrade3Price
+		}
+		if ("Upgrade3Price" in localStorage) {
+			if (JSON.parse(localStorage.getItem("Upgrade3Price")) == 0) {
+				Upgrade3Price = 0;
+			} else {
+				Upgrade3Price = JSON.parse(localStorage.getItem("Upgrade3Price"));
+			}
+			Upgrade3Text.innerHTML = " " + Upgrade3Times + " Vodkas! Price: " + Upgrade3Price
+		}
+
+
+		function Click() {
+			var AddPoints = 1 * Multiplier
+			Points = Points + AddPoints
+			CookieAmount.innerHTML = "Current Streetmans: " + Points
+			CookieButton.width = "255"
+			setTimeout(() => { CookieButton.width = "250"; }, 100);
+			localStorage.setItem("Points", Points)
+		}
+
+
+		function Upgrade1Click() {
+			if (Points >= Upgrade1Price) {
+				Multiplier = Multiplier + 1
+				Upgrade1Times = Upgrade1Times + 1
+				Points = Points - Upgrade1Price
+				Upgrade1Price = Upgrade1Price + 10
+				Upgrade1Text.innerHTML = " " + Upgrade1Times + " Beers! Price: " + Upgrade1Price
+			}
+			CookieAmount.innerHTML = "Current Streetmans: " + Points
+			localStorage.setItem("Points", Points)
+			localStorage.setItem("Upgrade1Times", Upgrade1Times)
+			localStorage.setItem("Upgrade1Price", Upgrade1Price)
+		}
+		function Upgrade2Click() {
+			if (Points >= Upgrade2Price) {
+				Multiplier = Multiplier + 30
+				Upgrade2Times = Upgrade2Times + 1
+				Points = Points - Upgrade2Price
+				Upgrade2Price = Upgrade2Price + 1500
+				Upgrade2Text.innerHTML = " " + Upgrade2Times + " Jack Daniels! Price: " + Upgrade2Price
+			}
+
+			CookieAmount.innerHTML = "Current Streetmans: " + Points
+			localStorage.setItem("Points", Points)
+			localStorage.setItem("Upgrade2Times", Upgrade2Times)
+			localStorage.setItem("Upgrade2Price", Upgrade2Price)
+		}
+
+		function Upgrade3Click() {
+			if (Points >= Upgrade3Price) {
+				Multiplier = Multiplier + 1
+				Upgrade3Times = Upgrade3Times + 1
+				Points = Points - Upgrade3Price
+				Upgrade3Price = Upgrade3Price + 1000000
+				Upgrade3Text.innerHTML = " " + Upgrade3Times + " Vodka! Price: " + Upgrade3Price
+
+
+
 				CookieAmount.innerHTML = "Current Streetmans: " + Points
-				CookieButton.width = "255"
-				setTimeout(() => {CookieButton.width = "250";}, 100);
-          localStorage.setItem("Points", Points)
 			}
 
-			<!-- Function executed when player press the upgrade button -->
-			function Upgrade1Click() {
-				if (Points >= Upgrade1Price) {
-					Multiplier = Multiplier + 1
-					Upgrade1Times = Upgrade1Times + 1
-					Points = Points - Upgrade1Price
-					Upgrade1Price = Upgrade1Price + 10
-					Upgrade1Text.innerHTML = " " + Upgrade1Times + " Beers!	Price: " + Upgrade1Price
-                }
-                CookieAmount.innerHTML = "Current Streetmans: " + Points
-                localStorage.setItem("Points", Points)
-                localStorage.setItem("Upgrade1Times", Upgrade1Times)
-                localStorage.setItem("Upgrade1Price", Upgrade1Price)
-              }
-                    function Upgrade2Click() {
-				if (Points >= Upgrade2Price) {
-					Multiplier = Multiplier + 30
-					Upgrade2Times = Upgrade2Times + 1
-					Points = Points - Upgrade2Price
-					Upgrade2Price = Upgrade2Price + 1500
-					Upgrade2Text.innerHTML = " " + Upgrade2Times + " Jack Daniels!	Price: " + Upgrade2Price }
+			CookieAmount.innerHTML = "Current Streetmans: " + Points
+			localStorage.setItem("Points", Points)
+			localStorage.setItem("Upgrade3Times", Upgrade3Times)
+			localStorage.setItem("Upgrade3Price", Upgrade3Price)
 
-          CookieAmount.innerHTML = "Current Streetmans: " + Points
-          localStorage.setItem("Points", Points)
-          localStorage.setItem("Upgrade2Times", Upgrade2Times)
-          localStorage.setItem("Upgrade2Price", Upgrade2Price)
-        }
+		}
 
-                    function Upgrade3Click() {
-				if (Points >= Upgrade3Price) {
-					Multiplier = Multiplier + 1
-					Upgrade3Times = Upgrade3Times + 1
-					Points = Points - Upgrade3Price
-					Upgrade3Price = Upgrade3Price + 1000000
-					Upgrade3Text.innerHTML = " " + Upgrade3Times + " Vodka!	Price: " + Upgrade3Price
+
+		function darkMode() {
+			var element = document.body;
+			element.classList.toggle("dark-mode");
+
+		}
+
+
+		localStorage.setItem("darkMode", darkMode);
+		darkMode = localStorage.toogle("dark-mode");
 
 
 
-					CookieAmount.innerHTML = "Current Streetmans: " + Points
-				}
-
-        CookieAmount.innerHTML = "Current Streetmans: " + Points
-        localStorage.setItem("Points", Points)
-        localStorage.setItem("Upgrade3Times", Upgrade3Times)
-        localStorage.setItem("Upgrade3Price", Upgrade3Price)
-
-			}
-			
-
-			function darkMode() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-			
-		</script>
+	</script>
 
 
 
