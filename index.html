@@ -147,7 +147,7 @@
 			height: 100%;
 			align-items: center;
 			justify-content: center;
-			font-family: sans-serif;
+			font-family: ' Arial, sans-serif';
 
 		}
 
@@ -620,14 +620,21 @@
 			localStorage.setItem("Upgrade3Times", Upgrade3Times)
 			localStorage.setItem("Upgrade3Price", Upgrade3Price)
 
-		}
 
+
+		}
+		function settings() {
+			document.getElementById("ll2").addEventListener("click"){
+				document.getElementById("settings").style.display = "flex";
+			}
+		}
 
 		function darkMode() {
 			var element = document.body;
 			element.classList.toggle("dark-mode");
 
 		}
+
 
 
 		localStorage.setItem("darkMode", darkMode);
