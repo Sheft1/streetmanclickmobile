@@ -95,17 +95,9 @@
 			}
 		}
 
-		function generalback() {
-			if (document.getElementById('general') !== undefined) {
-				if (document.getElementById('settings').style.display == 'none') {
-					document.getElementById('settings').style.display = 'Block';
-					document.getElementById('general').style.display = 'none';
-				} else {
-					document.getElementById('settings').style.display = 'Block';
-					document.getElementById('general').style.display = 'none';
-				}
-			}
-		}
+
+
+
 		function ting() {
 			var great = +document.getElementById('CookieAmount').value;
 			if (great > '1500') {
@@ -147,7 +139,7 @@
 			height: 100%;
 			align-items: center;
 			justify-content: center;
-			font-family: ' Arial, sans-serif';
+			font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 
 		}
 
@@ -253,6 +245,7 @@
 			width: 100px;
 			color: black;
 			border-radius: 25px;
+			display: none;
 		}
 
 		#displaybutton {
@@ -271,6 +264,7 @@
 			width: 100px;
 			color: black;
 			border-radius: 25px;
+			display: none;
 		}
 
 		#general {
@@ -344,9 +338,8 @@
 						<p id="Upgrade3Text"> 0 Vodkas! Price: 1000000 </p>
 					</div>
 				</div>
-				<button type="button" disabled name="button" id="ll" onclick="javascript:settings();">Settings</button>
-				<button type="button" name="button" id="ll2" onclick="javascript:settings();"
-					style="display:none;">Settings</button>
+				<button type="button" name="button" id="ll">Settings</button>
+				<button type="button" name="button" id="ll2" style="display:none;">Settings</button>
 			</center>
 		</div>
 
@@ -380,22 +373,32 @@
 				<p>General</p>
 			</div>
 
-			<div id="displaybutton" onclick="javascript:display();">
+			<div id="displaybutton">
 				<p>Display</p>
 			</div>
+
+
 
 			<div id="morebutton" onclick="javascript:more();">
 				<p>More</p>
 			</div>
-			<input type="button" onclick="darkMode()" value="Dark Mode/ Light Mode">
+
 			<br>
 			<input type="button" onclick="location.href='https://forms.gle/BxonQEYQjsaset7X6';" value="Bugs?" />
 
 
 			<br>
+			<button type="button" name="button" onclick="javascript:settingsback();">Back</button>
+			<br>
 			<p2>All rights to @sheftbass and all img rights to @streetmantv</p2>
 		</center>
-		<button type="button" name="button" onclick="javascript:settingsback();">Back</button>
+
+	</div>
+	<div id="disset" style="display: none;">
+		<input type="button" onclick="darkMode()" value="Dark Mode/ Light Mode" style="display: flex;">
+		<div class="gset">
+			<button type="button" name="button" id="displayback">Back</button>
+		</div>
 	</div>
 
 
@@ -623,11 +626,28 @@
 
 
 		}
-		function settings() {
-			document.getElementById("ll2").addEventListener("click"){
-				document.getElementById("settings").style.display = "flex";
-			}
-		}
+
+		document.getElementById("ll").addEventListener("click", function () {
+
+
+			document.getElementById("settings").style.display = "flex";
+			document.getElementById("home").style.display = "none";
+
+		});
+
+		document.getElementById("displaybutton").addEventListener("click", function () {
+
+
+			document.getElementById("settings").style.display = "none";
+			document.getElementById("disset").style.display = "flex";
+
+		});
+
+
+
+
+
+
 
 		function darkMode() {
 			var element = document.body;
@@ -637,8 +657,10 @@
 
 
 
-		localStorage.setItem("darkMode", darkMode);
-		darkMode = localStorage.toogle("dark-mode");
+		document.getElementById("displayback").addEventListener("click", function () {
+			document.getElementById('disset').style.display = "none";
+			document.getElementById('settings').style.display = 'flex';
+		});
 
 
 
